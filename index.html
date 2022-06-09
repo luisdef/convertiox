@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convertiox | Luis Felipe Assmann</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async src="./assets/js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="lamp">
+            <i class="fa fa-moon-o"></i>
+        </div>
+        <header>
+            <img src="./assets/img/coin.png" alt="Moeda">
+            <div class="sobre">
+                <h1>convertiox</h1>
+                <p>Conversor de moeda.</p>
+            </div>
+        </header>
+        <main>
+            <p id="qtde">Quantia:</p>
+            <input placeholder="0.00" type="number" name="quantia" id="quantia">
+
+            <p>Converter de: </p>
+            <select name="de" id="de">
+                <option value="">Selecione a moeda...</option>
+            </select>
+
+            <p>Para: </p>
+            <select name="para" id="para">
+                <option value="">Selecione a moeda...</option>
+            </select>
+
+            <button>Converter</button>
+
+            <p>Valor:</p>
+            <div class="valor">0.15</div>
+        </main>
+        <footer>
+            <p>Desenvolvido por <a target="_blank" href="https://github.com/luisdef">Luis Felipe Assmann</a></p>
+        </footer>
+    </div>
+</body>
+</html>
