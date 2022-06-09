@@ -1,0 +1,148 @@
+{
+    "supportedCurrencies": [
+        {
+            "id": "BRL",
+            "name": "Real Brasileiro"
+        },
+        {
+            "id": "USD",
+            "name": "Dólar Americano"
+        },
+        {
+            "id": "EUR",
+            "name": "Euro"
+        },
+        {
+            "id": "CUP",
+            "name": "Peso Cubano"
+        },
+        {
+            "id": "AUD",
+            "name": "Dólar Australiano"
+        },
+        {
+            "id": "NZD",
+            "name": "Dólar Neozenlandês"
+        },
+        {
+            "id": "SEK",
+            "name": "Coroa Sueca"
+        },
+        {
+            "id": "CNY",
+            "name": "Remimbi Chinês"
+        },
+        {
+            "id": "INR",
+            "name": "Rupia Indiana"
+        },
+        {
+            "id": "KRW",
+            "name": "Won Sul-coreano"
+        },
+        {
+            "id": "COP",
+            "name": "Peso Colombiano"
+        },
+        {
+            "id": "SAR",
+            "name": "Riyal Saudita"
+        },
+        {
+            "id": "SGD",
+            "name": "Dólar de Singapura"
+        },
+        {
+            "id": "VEF",
+            "name": "Bolívar Venezuelano"
+        },
+        {
+            "id": "ARS",
+            "name": "Peso Argentino"
+        },
+        {
+            "id": "BOB",
+            "name": "Boliviano"
+        },
+        {
+            "id": "CAD",
+            "name": "Dólar Canadense"
+        },
+        {
+            "id": "CLP",
+            "name": "Peso Chileno"
+        },
+        {
+            "id": "JPY",
+            "name": "Iene Japonês"
+        },
+        {
+            "id": "CHF",
+            "name": "Franco Suíço"
+        },
+        {
+            "id": "PYG",
+            "name": "Guarani Paraguaio"
+        },
+        {
+            "id": "MXN",
+            "name": "Peso Mexicano"
+        },
+        {
+            "id": "NOK",
+            "name": "Coroa Norueguesa"
+        },
+        {
+            "id": "RUB",
+            "name": "Rublo Russo"
+        },
+        {
+            "id": "UYU",
+            "name": "Peso Uruguaio"
+        },
+        {
+            "id": "UAH",
+            "name": "Grívnea Ucraniana"
+        },
+        {
+            "id": "GBP",
+            "name": "Libra Britânica"
+        },
+        {
+            "id": "BTC",
+            "name": "Bitcoin"
+        },
+        {
+            "id": "ETH",
+            "name": "Ethereum"
+        },
+        {
+            "id": "BNB",
+            "name": "Binance Coin"
+        },
+        {
+            "id": "ADA",
+            "name": "Cardano"
+        },
+        {
+            "id": "USDT",
+            "name": "Tether"
+        },
+        {
+            "id": "SOL",
+            "name": "Solana"
+        },
+        {
+            "id": "XRP",
+            "name": "Ripple"
+        },
+        {
+            "id": "DOT",
+            "name": "Polkadot"
+        },
+        {
+            "id": "XDG",
+            "name": "Dogecoin"
+        }
+    ]
+}
