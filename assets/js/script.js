@@ -63,14 +63,11 @@ fetch("./assets/js/support.json")
 });
 
 
-const buttonConvert = document.querySelector("button#converter");
 
+function convert() {
 
-buttonConvert.addEventListener('click', (e) => {
     let de = document.querySelector("#de").value;
-
-    let para = document.querySelector("#para").value;
-    
+    let para = document.querySelector("#para").value;  
     let quantia = document.querySelector("#quantia").value;
     
     if (de == "" || para == "" || quantia == "")
@@ -78,6 +75,7 @@ buttonConvert.addEventListener('click', (e) => {
         alert("Preencha corretamente todos os campos antes de converter as moedas.");
         return false;
     }
+    
     else
     {
         fetch(baseUrlCoinApi+`/v1/exchangerate/${de}/${para}?apikey=${coinApiKey}`)
@@ -104,4 +102,38 @@ buttonConvert.addEventListener('click', (e) => {
             console.info(err);
         });
     }
+
+}
+
+
+const buttonConvert = document.querySelector("button#converter");
+
+buttonConvert.addEventListener('click', (e) => {
+    
+    try {
+        convert();
+    } catch (error) {
+        console.info(error);
+    }
+
+    console.log("Botão converter pressionado.");
+
+});
+
+
+const qtdeInput = document.querySelector("#quantia");
+
+qtdeInput.addEventListener('keypress', (e) => {
+
+    if (e.key === "Enter") {
+
+        try {
+            convert();
+        } catch (error) {
+            console.info(error);
+        }
+
+        console.log("Tecla Enter pressionada.");
+    }
+
 });

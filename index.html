@@ -13,9 +13,11 @@
 </head>
 <body>
     <div class="container">
+        
         <div id="lamp">
             <i class="fa fa-moon-o"></i>
         </div>
+        
         <header>
             <img src="./assets/img/coin.png" alt="Moeda">
             <div class="sobre">
@@ -23,24 +25,34 @@
                 <p>Conversor de moeda.</p>
             </div>
         </header>
+        
         <main>
+            
             <p>Quantia:</p>
-            <input placeholder="0.00" type="number" name="quantia" id="quantia">
+            <input placeholder="0,00" type="number" name="quantia" id="quantia">
+            
             <p>Converter de: </p>
+            
             <select name="de" id="de">
-                <option value="">Selecione a moeda...</option>
+                <option value="">Selecione a moeda...</option>    
             </select>
+
             <p>Para: </p>
+            
             <select name="para" id="para">
                 <option value="">Selecione a moeda...</option>
             </select>
+            
             <button id="converter">Converter</button>
+            
             <p>Valor:</p>
-            <div class="valor">0.00</div>
+            <div class="valor">0,00</div>
         </main>
+        
         <footer>
             <p>Desenvolvido por <a target="_blank" href="https://github.com/luisdef">Luis Felipe Assmann</a></p>
         </footer>
+        
     </div>
 </body>
 </html>

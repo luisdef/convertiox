@@ -7,7 +7,7 @@
 @font-face { font-family: 'EuclidSemiBold'; src: url('../fonts/euclid_semibold.ttf'); }
 @font-face { font-family: 'EuclidReg'; src: url('../fonts/euclid_regular.ttf'); }
 h1 { font-family: 'EuclidSemiBold', sans-serif; font-size: 2rem; }
-#cash { position: absolute; font-size: 1.9rem; color: #eeff11; transform: rotate(-30deg);}
+#cash { position: absolute; font-size: 1.9rem; color: #ffc011; transform: rotate(-30deg);}
 p, input, select, button { font-family: 'EuclidReg', sans-serif; }
 * { margin: 0; padding: 0; box-sizing: border-box; transition: 0.2s ease; }
 body { background-color: #d5d5d5; } .dark { background-color: #111; }
@@ -54,12 +54,7 @@ header {
     min-height: 15vh;
 }.dark header { background-color: var(--green-dark); }
 header>img { width: 2.8rem; height: auto; }
-header>.sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+header>.sobre { display: flex; flex-direction: column; align-items: center; justify-content: center; }
 main {
     grid-area: main;
     display: flex;
