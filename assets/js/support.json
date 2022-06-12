@@ -13,10 +13,6 @@
             "name": "Euro"
         },
         {
-            "id": "CUP",
-            "name": "Peso Cubano"
-        },
-        {
             "id": "AUD",
             "name": "Dólar Australiano"
         },
@@ -27,10 +23,6 @@
         {
             "id": "SEK",
             "name": "Coroa Sueca"
-        },
-        {
-            "id": "CNY",
-            "name": "Remimbi Chinês"
         },
         {
             "id": "INR",
@@ -45,16 +37,8 @@
             "name": "Peso Colombiano"
         },
         {
-            "id": "SAR",
-            "name": "Riyal Saudita"
-        },
-        {
             "id": "SGD",
             "name": "Dólar de Singapura"
-        },
-        {
-            "id": "VEF",
-            "name": "Bolívar Venezuelano"
         },
         {
             "id": "ARS",
@@ -81,10 +65,6 @@
             "name": "Franco Suíço"
         },
         {
-            "id": "PYG",
-            "name": "Guarani Paraguaio"
-        },
-        {
             "id": "MXN",
             "name": "Peso Mexicano"
         },
@@ -97,10 +77,6 @@
             "name": "Rublo Russo"
         },
         {
-            "id": "UYU",
-            "name": "Peso Uruguaio"
-        },
-        {
             "id": "UAH",
             "name": "Grívnea Ucraniana"
         },
@@ -110,39 +86,35 @@
         },
         {
             "id": "BTC",
-            "name": "Bitcoin"
+            "name": "Bitcoin (criptomoeda)"
         },
         {
             "id": "ETH",
-            "name": "Ethereum"
+            "name": "Ethereum (criptomoeda)"
         },
         {
             "id": "BNB",
-            "name": "Binance Coin"
+            "name": "Binance Coin (criptomoeda)"
         },
         {
             "id": "ADA",
-            "name": "Cardano"
+            "name": "Cardano (criptomoeda)"
         },
         {
             "id": "USDT",
-            "name": "Tether"
+            "name": "Tether (criptomoeda)"
         },
         {
             "id": "SOL",
-            "name": "Solana"
+            "name": "Solana (criptomoeda)"
         },
         {
             "id": "XRP",
-            "name": "Ripple"
+            "name": "Ripple (criptomoeda)"
         },
         {
             "id": "DOT",
-            "name": "Polkadot"
-        },
-        {
-            "id": "XDG",
-            "name": "Dogecoin"
+            "name": "Polkadot (criptomoeda)"
         }
     ]
 }
