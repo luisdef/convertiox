@@ -32,6 +32,8 @@ const baseUrlCoinApi = "https://rest.coinapi.io";
 const allImagesCoinApi = "/v1/assets/icons/18?apikey=";
 const coinApiKey = "31C67320-5F39-499A-87E3-BEFCB3272316";
 
+const freeCurrencyApiUrl = "https://free.currconv.com/";
+
 fetch("./assets/js/support.json")
     .then(res => {
         return res.json();
@@ -84,19 +86,26 @@ function convert() {
             })
             .then(data => {
                 
-                let valorUnit = data["rate"];
+                if (data.error) {
+                    alert("Infelizmente ocorreu um erro na requisição da API. Provavelmente ela ainda não possui suporte à moeda solicitada.");
+                    
+                    return data.error;
 
-                let valorConvertido = valorUnit * quantia;
-
-                let elementoValor = document.querySelector(".valor");
-
-                let valorFormatado = new Intl.NumberFormat(
-                    'pt-BR',
-                    { maximumSignificantDigits: 3 }
-                ).format(valorConvertido);
-
-                elementoValor.innerHTML = valorFormatado;
-                
+                }
+                else {
+                    let valorUnit = data["rate"];
+    
+                    let valorConvertido = valorUnit * quantia;
+    
+                    let elementoValor = document.querySelector(".valor");
+    
+                    let valorFormatado = new Intl.NumberFormat(
+                        'pt-BR',
+                        { maximumSignificantDigits: 3 }
+                    ).format(valorConvertido);
+    
+                    elementoValor.innerHTML = valorFormatado;
+                }
             })
         .catch(err => {
             console.info(err);
