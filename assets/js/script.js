@@ -1,9 +1,12 @@
-// Change theme
+// Mudança de tema;
+// Se dará pela presença ou não da classe 'dark';
+
 const body = document.querySelector('body');
 
 const changeThemeButton = document.getElementById('lamp');
 
 function toggleTheme() {
+    
     body.classList.toggle("dark");
     changeThemeButton.classList.toggle("dark");
 
@@ -11,29 +14,37 @@ function toggleTheme() {
     localStorage["buttonTheme"] = changeThemeButton.className; 
 }
 
-if (localStorage["bodyTheme"] == "dark") {
+if (localStorage["bodyTheme"] == "dark")
+{
     toggleTheme();
-} else {
+} 
+else 
+{
     localStorage["bodyTheme"] = body.className;
 
     localStorage["buttonTheme"] = changeThemeButton.className;
 }
 
 changeThemeButton.onclick = function() {
+    
     toggleTheme();
+
 }
 
 
-
-// conversion example
+// Exemplo da URL de conversão de moeda da Coin API:
 // https://rest.coinapi.io/v1/exchangerate/ETH/BRL?apikey=????
 
 const baseUrlCoinApi = "https://rest.coinapi.io";
 const allImagesCoinApi = "/v1/assets/icons/18?apikey=";
 const coinApiKey = "31C67320-5F39-499A-87E3-BEFCB3272316";
 
+// Para fazer:
+//      - Adicionar mais opções de conversão com a Free Currency API;
+//      - Se uma API estiver caída ou entrar em time out, ter a opção de utilizar outra.
 const freeCurrencyApiUrl = "https://free.currconv.com/";
 
+// As moedas suportadas (por agora) estão armazenadas em support.json;
 fetch("./assets/js/support.json")
     .then(res => {
         return res.json();
@@ -44,6 +55,7 @@ fetch("./assets/js/support.json")
         const selPara = document.querySelector("#para");
 
         support.forEach((obj) => {
+            
             let optDe = document.createElement("option");
             optDe.value = obj["id"];
             optDe.setAttribute("id", obj["id"]);
@@ -66,6 +78,9 @@ fetch("./assets/js/support.json")
 
 
 
+// Adição da função convert() para ser acionada por mais de uma forma,
+// no caso, pela tecla Enter no input da quantia a ser convertida e
+// também pelo botão converter.
 function convert() {
 
     let de = document.querySelector("#de").value;
@@ -81,13 +96,15 @@ function convert() {
     else
     {
         fetch(baseUrlCoinApi+`/v1/exchangerate/${de}/${para}?apikey=${coinApiKey}`)
+        
             .then(response => {
                 return response.json();
             })
+        
             .then(data => {
                 
                 if (data.error) {
-                    alert("Infelizmente ocorreu um erro na requisição da API. Provavelmente ela ainda não possui suporte à moeda solicitada.");
+                    alert("Infelizmente ocorreu um erro na requisição da API. Tente novamente mais tarde...");
                     
                     return data.error;
 
@@ -101,13 +118,18 @@ function convert() {
     
                     let valorFormatado = new Intl.NumberFormat(
                         'pt-BR',
-                        { maximumSignificantDigits: 3 }
+                        {
+                            maximumSignificantDigits: 3
+                        }
                     ).format(valorConvertido);
     
                     elementoValor.innerHTML = valorFormatado;
+                    
                 }
             })
-        .catch(err => {
+        
+        .catch(err =>
+        {
             console.info(err);
         });
     }
@@ -119,9 +141,12 @@ const buttonConvert = document.querySelector("button#converter");
 
 buttonConvert.addEventListener('click', (e) => {
     
-    try {
+    try
+    {
         convert();
-    } catch (error) {
+    } 
+    catch (error)
+    {
         console.info(error);
     }
 
@@ -136,9 +161,11 @@ qtdeInput.addEventListener('keypress', (e) => {
 
     if (e.key === "Enter") {
 
-        try {
+        try
+        {
             convert();
-        } catch (error) {
+        }
+        catch (error) {
             console.info(error);
         }
 
