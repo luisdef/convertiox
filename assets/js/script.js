@@ -74,6 +74,7 @@ fetch("./assets/js/support.json")
     })
 .catch(err => {
     console.info(err);
+    alert("Erro ao carregar\n\nConteúdo bloqueado pela política de acesso do CORS.\n\nTente usar um servidor ou acesse:\nconvertiox.vercel.app");
 });
 
 
