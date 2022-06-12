@@ -3,7 +3,7 @@
   <h1>convertio$</h1>
 </div> 
 
-Conversor de moedas utilizando dados da [Coin API](https://www.coinapi.io/), oferecendo dados atualizado das principais moedas em circulação no mundo, além de criptomoedas.
+Conversor de moedas utilizando dados da [Coin API](https://www.coinapi.io/), oferecendo dados atualizado das principais moedas em circulação no mundo, além de criptomoedas. Tudo utilizando HTML, CSS e JavaScript Vanilla.
 
 Esse mini-projeto foi desenvolvido para a avaliação da disciplina de Programação 3 do Curso Técnico em Informática pelo IFRS Campus Feliz.
 
