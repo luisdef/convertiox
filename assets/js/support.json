@@ -1,120 +1,120 @@
 {
-    "supportedCurrencies": [
-        {
-            "id": "BRL",
-            "name": "Real Brasileiro"
-        },
-        {
-            "id": "USD",
-            "name": "Dólar Americano"
-        },
-        {
-            "id": "EUR",
-            "name": "Euro"
-        },
-        {
-            "id": "AUD",
-            "name": "Dólar Australiano"
-        },
-        {
-            "id": "NZD",
-            "name": "Dólar Neozenlandês"
-        },
-        {
-            "id": "SEK",
-            "name": "Coroa Sueca"
-        },
-        {
-            "id": "INR",
-            "name": "Rupia Indiana"
-        },
-        {
-            "id": "KRW",
-            "name": "Won Sul-coreano"
-        },
-        {
-            "id": "COP",
-            "name": "Peso Colombiano"
-        },
-        {
-            "id": "SGD",
-            "name": "Dólar de Singapura"
-        },
-        {
-            "id": "ARS",
-            "name": "Peso Argentino"
-        },
-        {
-            "id": "BOB",
-            "name": "Boliviano"
-        },
-        {
-            "id": "CAD",
-            "name": "Dólar Canadense"
-        },
-        {
-            "id": "CLP",
-            "name": "Peso Chileno"
-        },
-        {
-            "id": "JPY",
-            "name": "Iene Japonês"
-        },
-        {
-            "id": "CHF",
-            "name": "Franco Suíço"
-        },
-        {
-            "id": "MXN",
-            "name": "Peso Mexicano"
-        },
-        {
-            "id": "NOK",
-            "name": "Coroa Norueguesa"
-        },
-        {
-            "id": "RUB",
-            "name": "Rublo Russo"
-        },
-        {
-            "id": "UAH",
-            "name": "Grívnea Ucraniana"
-        },
-        {
-            "id": "GBP",
-            "name": "Libra Britânica"
-        },
-        {
-            "id": "BTC",
-            "name": "Bitcoin (criptomoeda)"
-        },
-        {
-            "id": "ETH",
-            "name": "Ethereum (criptomoeda)"
-        },
-        {
-            "id": "BNB",
-            "name": "Binance Coin (criptomoeda)"
-        },
-        {
-            "id": "ADA",
-            "name": "Cardano (criptomoeda)"
-        },
-        {
-            "id": "USDT",
-            "name": "Tether (criptomoeda)"
-        },
-        {
-            "id": "SOL",
-            "name": "Solana (criptomoeda)"
-        },
-        {
-            "id": "XRP",
-            "name": "Ripple (criptomoeda)"
-        },
-        {
-            "id": "DOT",
-            "name": "Polkadot (criptomoeda)"
-        }
-    ]
+  "supportedCurrencies": [
+    {
+      "id": "BRL",
+      "name": "Real Brasileiro"
+    },
+    {
+      "id": "USD",
+      "name": "Dólar Americano"
+    },
+    {
+      "id": "EUR",
+      "name": "Euro"
+    },
+    {
+      "id": "AUD",
+      "name": "Dólar Australiano"
+    },
+    {
+      "id": "NZD",
+      "name": "Dólar Neozenlandês"
+    },
+    {
+      "id": "SEK",
+      "name": "Coroa Sueca"
+    },
+    {
+      "id": "INR",
+      "name": "Rupia Indiana"
+    },
+    {
+      "id": "KRW",
+      "name": "Won Sul-coreano"
+    },
+    {
+      "id": "COP",
+      "name": "Peso Colombiano"
+    },
+    {
+      "id": "SGD",
+      "name": "Dólar de Singapura"
+    },
+    {
+      "id": "ARS",
+      "name": "Peso Argentino"
+    },
+    {
+      "id": "BOB",
+      "name": "Boliviano"
+    },
+    {
+      "id": "CAD",
+      "name": "Dólar Canadense"
+    },
+    {
+      "id": "CLP",
+      "name": "Peso Chileno"
+    },
+    {
+      "id": "JPY",
+      "name": "Iene Japonês"
+    },
+    {
+      "id": "CHF",
+      "name": "Franco Suíço"
+    },
+    {
+      "id": "MXN",
+      "name": "Peso Mexicano"
+    },
+    {
+      "id": "NOK",
+      "name": "Coroa Norueguesa"
+    },
+    {
+      "id": "RUB",
+      "name": "Rublo Russo"
+    },
+    {
+      "id": "UAH",
+      "name": "Grívnea Ucraniana"
+    },
+    {
+      "id": "GBP",
+      "name": "Libra Britânica"
+    },
+    {
+      "id": "BTC",
+      "name": "Bitcoin (criptomoeda)"
+    },
+    {
+      "id": "ETH",
+      "name": "Ethereum (criptomoeda)"
+    },
+    {
+      "id": "BNB",
+      "name": "Binance Coin (criptomoeda)"
+    },
+    {
+      "id": "ADA",
+      "name": "Cardano (criptomoeda)"
+    },
+    {
+      "id": "USDT",
+      "name": "Tether (criptomoeda)"
+    },
+    {
+      "id": "SOL",
+      "name": "Solana (criptomoeda)"
+    },
+    {
+      "id": "XRP",
+      "name": "Ripple (criptomoeda)"
+    },
+    {
+      "id": "DOT",
+      "name": "Polkadot (criptomoeda)"
+    }
+  ]
 }
