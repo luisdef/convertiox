@@ -13,3 +13,11 @@ Esse mini-projeto foi desenvolvido para a avaliação da disciplina de Programa�
 Professor: [Vinicius Hartmann Ferreira (vinihf)](https://github.com/vinihf).
 
 Desenvolvido por: [Luis Felipe Assmann (luisdef)](http://github.com/luisdef).
+
+
+### TODO
+
+- [ ] Resolução do fetch de arquivos locais:
+  - Possível solução: https://stackoverflow.com/questions/50007055/fetch-request-to-local-file-not-working
+
+- [ ] Resolução do fetch de API por arquivo local
