@@ -20,6 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script async src="./assets/js/script.js"></script>
+    <script src="./assets/js/storage.js"></script>
   </head>
   <body>
     <div class="container">
@@ -36,25 +37,27 @@
       </header>
 
       <main>
-        <p>Quantia:</p>
-        <input placeholder="0,00" type="number" name="quantia" id="quantia" />
-
-        <p>Converter de:</p>
-
-        <select name="de" id="de">
-          <option value="">Selecione a moeda...</option>
-        </select>
-
-        <p>Para:</p>
-
-        <select name="para" id="para">
-          <option value="">Selecione a moeda...</option>
-        </select>
-
-        <button id="converter">Converter</button>
-
-        <p>Valor:</p>
-        <div class="valor">0,00</div>
+        <div class="form">
+          <p>Quantia:</p>
+          <input placeholder="0,00" type="number" name="quantia" id="quantia" />
+  
+          <p>Converter de:</p>
+  
+          <select name="de" id="de">
+            <option value="">Selecione a moeda...</option>
+          </select>
+  
+          <p>Para:</p>
+  
+          <select name="para" id="para">
+            <option value="">Selecione a moeda...</option>
+          </select>
+  
+          <button id="converter">Converter</button>
+  
+          <p>Valor:</p>
+          <div class="valor">0,00</div>
+        </div>
       </main>
 
       <footer style="display: block">
@@ -63,9 +66,9 @@
         </p>
         <p>
           Desenvolvido por
-          <a target="_blank" href="https://github.com/luisdef"
-            >Luis Felipe Assmann</a
-          >
+          <a target="_blank" href="https://github.com/luisdef">
+            Luis Felipe Assmann
+          </a>
         </p>
       </footer>
     </div>
