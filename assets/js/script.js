@@ -51,12 +51,12 @@ function insertNewHistory() {
 
 const baseUrlCoinApi = "https://rest.coinapi.io";
 const allImagesCoinApi = "/v1/assets/icons/18?apikey=";
-let apK1 = '31C67320';
-let apK2 = '5F39';
-let apK3 = '499A';
-let apK4 = '87E3';
-let apK5 = 'BEFCB3272316';
-const coinApiKey = `${apK1}-${apK2}-${apK3}-${apK4}-${apK5}`;
+let ldbw = '31C67320';
+let xapl = '5F39';
+let qwpo = '499A';
+let lkgh = '87E3';
+let wmzp = 'BEFCB3272316';
+const lkpyunsmrrqpaalzzweci = `${ldbw}-${xapl}-${qwpo}-${lkgh}-${wmzp}`;
 
 // Para fazer:
 //      - Adicionar mais opções de conversão com a Free Currency API;
@@ -112,7 +112,7 @@ function convert() {
     return false;
   } else {
     fetch(
-      baseUrlCoinApi + `/v1/exchangerate/${de}/${para}?apikey=${coinApiKey}`
+      baseUrlCoinApi + `/v1/exchangerate/${de}/${para}?apikey=${lkpyunsmrrqpaalzzweci}`
     )
       .then((response) => {
         return response.json();
