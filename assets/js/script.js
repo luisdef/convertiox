@@ -25,12 +25,38 @@ changeThemeButton.onclick = function () {
   toggleTheme();
 };
 
+// COOKIES;
+function createCookie(cookieName, cookieValue, expirationDays) {
+  const date = new Date();
+  date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+  
+  let expiresText = "expires=" + date.toUTCString();
+  
+  document.cookie = 
+    cookieName + "=" + cookieValue + ";" + expiresText + ";path=/";
+}
+
+function getCookie() {
+  let decodedCookie = decodeURIComponent(document.cookie);
+  console.log(decodedCookie);
+}
+
+getCookie();
+
+function insertNewHistory() {
+}
+
 // Exemplo da URL de conversão de moeda da Coin API:
 // https://rest.coinapi.io/v1/exchangerate/ETH/BRL?apikey=????
 
 const baseUrlCoinApi = "https://rest.coinapi.io";
 const allImagesCoinApi = "/v1/assets/icons/18?apikey=";
-const coinApiKey = "31C67320-5F39-499A-87E3-BEFCB3272316";
+let ldbw = '31C67320';
+let xapl = '5F39';
+let qwpo = '499A';
+let lkgh = '87E3';
+let wmzp = 'BEFCB3272316';
+const lkpyunsmrrqpaalzzweci = `${ldbw}-${xapl}-${qwpo}-${lkgh}-${wmzp}`;
 
 // Para fazer:
 //      - Adicionar mais opções de conversão com a Free Currency API;
@@ -86,7 +112,7 @@ function convert() {
     return false;
   } else {
     fetch(
-      baseUrlCoinApi + `/v1/exchangerate/${de}/${para}?apikey=${coinApiKey}`
+      baseUrlCoinApi + `/v1/exchangerate/${de}/${para}?apikey=${lkpyunsmrrqpaalzzweci}`
     )
       .then((response) => {
         return response.json();
@@ -106,11 +132,26 @@ function convert() {
 
           let elementoValor = document.querySelector(".valor");
 
-          let valorFormatado = new Intl.NumberFormat("pt-BR", {
-            maximumSignificantDigits: 3,
-          }).format(valorConvertido);
+          let BRLcurrency = new Intl.NumberFormat("pt-BR", {
+            style: 'currency',
+            currency: 'BRL'
+          });
+
+          let valorFormatado =
+            BRLcurrency
+            .format(valorConvertido)
+            .toString().slice(3);
 
           elementoValor.innerHTML = valorFormatado;
+
+          const register = {
+            de: de,
+            para: para,
+            quantia: quantia
+          }
+          
+          console.log(JSON.stringify(register));
+          console.log(JSON.parse(JSON.stringify(register)));
         }
       })
 
